@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Http;
+use LaravelOpenAPI\Specification\JsonSpecification;
+
+// use LaravelOpenAPI\Specification\YamlSpecification;
+
+class {{ class }} implements JsonSpecification
+{
+    /** {@inheritDoc} */
+    public function __invoke(): string
+    {
+        return Cache::rememberForever(self::class, fn () => Http::get('https://petstore3.swagger.io/api/v3/openapi.json')->body());
+    }
+}
