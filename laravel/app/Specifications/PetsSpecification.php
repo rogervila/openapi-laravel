@@ -3,6 +3,7 @@
 namespace App\Specifications;
 
 use LaravelOpenAPI\Specification\YamlSpecification;
+// use LaravelOpenAPI\Specification\JsonSpecification;
 
 class PetsSpecification implements YamlSpecification
 {
