@@ -45,5 +45,4 @@ jobs:
 
       - name: Test on real Laravel project
         run: |
-          cd laravel && composer install
-          cd laravel && php artisan test
+          cd laravel && composer install && php artisan test
