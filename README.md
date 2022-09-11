@@ -62,7 +62,7 @@ class PetsSpecification implements YamlSpecification
 
 ### OpenAPI Requests
 
-Once a Specification is set, You can create OpenAPI Request and specify which specification it should use.
+Once a Specification is set, You can create OpenAPI Request and **define which specification it should use**.
 
 The package will handle the request validation based on the specification.
 
