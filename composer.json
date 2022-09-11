@@ -41,6 +41,13 @@
     "preferred-install": "dist",
     "sort-packages": true
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelOpenAPI\\ServiceProvider"
+      ]
+    }
+  },
   "scripts": {
     "test": [
       "@php ./vendor/bin/phpunit"
