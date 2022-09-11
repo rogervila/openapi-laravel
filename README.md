@@ -64,9 +64,10 @@ class PetsSpecification implements YamlSpecification
 
 Once a Specification is set, You can create OpenAPI Request and specify which specification it should use.
 
-The package will handle the request validation based on the specification. 
+The package will handle the request validation based on the specification.
 
-If it does not match, it will return a "`422` validation error". If the specification is missing, it will return a "`501` not implemented" error.
+- If it **does not match**, it will return a **"`422` validation error"**. 
+- If the **specification is missing**, it will return a **"`501` not implemented"** error.
 
 ```sh
 # Requests are placed on \App\Http\Requests\OpenAPI namespace
