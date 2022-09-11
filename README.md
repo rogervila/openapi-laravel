@@ -1,19 +1,19 @@
-<p align="center"><img width="200" src="https://i.ibb.co/ZgBB9Zy/box.png" alt="Composer Package Template" /></p>
+<p align="center"><img height="200" src="https://cdn.worldvectorlogo.com/logos/openapi-1.svg" alt="OpenAPI" /><img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Lravel.svg.png" alt="Laravel" /></p>
 
-[![Build Status](https://github.com/rogervila/composer-package-template/workflows/build/badge.svg)](https://github.com/rogervila/array-diff-multidimensional/actions)
+[![Build Status](https://github.com/rogervila/openapi-laravel/workflows/build/badge.svg)](https://github.com/rogervila/array-diff-multidimensional/actions)
 [![StyleCI](https://github.styleci.io/repos/211657121/shield?branch=master)](https://github.styleci.io/repos/211657121)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_composer-package-template&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_composer-package-template)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_openapi-laravel&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_openapi-laravel)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_openapi-laravel&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_openapi-laravel)
 
-[![Latest Stable Version](https://poser.pugx.org/rogervila/composer-package-template/v/stable)](https://packagist.org/packages/rogervila/composer-package-template)
-[![Total Downloads](https://poser.pugx.org/rogervila/composer-package-template/downloads)](https://packagist.org/packages/rogervila/composer-package-template)
-[![License](https://poser.pugx.org/rogervila/composer-package-template/license)](https://packagist.org/packages/rogervila/composer-package-template)
+[![Latest Stable Version](https://poser.pugx.org/rogervila/openapi-laravel/v/stable)](https://packagist.org/packages/rogervila/openapi-laravel)
+[![Total Downloads](https://poser.pugx.org/rogervila/openapi-laravel/downloads)](https://packagist.org/packages/rogervila/openapi-laravel)
+[![License](https://poser.pugx.org/rogervila/openapi-laravel/license)](https://packagist.org/packages/rogervila/openapi-laravel)
 
-# Composer Package Template
+# OpenAPI Laravel
 
 ## About
 
-Composer Package Template brings a base setup useful for developing PHP packages.
+Validate HTTP Requests and Responses with OpenAPI Specs.
 
 ## Author
 
@@ -21,6 +21,4 @@ Created by [Roger Vilà](https://rogervila.es)
 
 ## License
 
-Composer Package Template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+OpenAPI Laravel is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
