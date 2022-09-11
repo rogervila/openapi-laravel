@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        php: ['8.2', '8.1', '8.0', '7.4', '7.3', '7.2']
+        php: ['8.2', '8.1', '8.0']
 
     name: PHP ${{ matrix.php }} - ${{ matrix.os }}
 
@@ -24,7 +24,7 @@ jobs:
         uses: shivammathur/setup-php@2.21.2
         with:
           php-version: ${{ matrix.php }}
-          extensions: zip, curl, xdebug
+          extensions: zip, curl, xdebug, fileinfo, pdo_sqlite
           coverage: xdebug
 
       - name: Update composer
@@ -39,4 +39,10 @@ jobs:
           XDEBUG_MODE: coverage
 
       - name: Run static analysis
-        run: vendor/bin/phpstan analyse src tests --level 8 && vendor/bin/psalm --show-info=true
+        run: |
+          vendor/bin/phpstan analyse src tests --level 8
+          vendor/bin/psalm --show-info=true
+
+      - name: Test on real Laravel project
+        run: |
+          cd laravel && composer install && php artisan test

@@ -1,45 +1,56 @@
 {
-    "name": "rogervila/composer-package-template",
-    "type": "library",
-    "description": "PHP Composer package template",
-    "keywords": [
-        "composer package template"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Roger Vilà",
-            "email": "rogervila@me.com"
-        }
-    ],
-    "require": {
-        "php": "^7.2 || ^8.0"
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^1.0",
-        "phpunit/phpunit": "^8.0 || ^9.0",
-        "vimeo/psalm": "^4.0"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "autoload": {
-        "psr-4": {
-            "Example\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\Example\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "test": [
-            "@php ./vendor/bin/phpunit"
-        ]
+  "name": "rogervila/openapi-laravel",
+  "description": "Validate HTTP Requests and Responses with OpenAPI Specs",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "laravel openapi http validation"
+  ],
+  "authors": [
+    {
+      "name": "Roger Vilà",
+      "email": "rogervila@me.com"
     }
+  ],
+  "require": {
+    "laravel/framework": "^9.21.0",
+    "league/openapi-psr7-validator": "^0.18.0",
+    "nyholm/psr7": "^1.5",
+    "symfony/cache": "^6.0",
+    "symfony/psr-http-message-bridge": "^2.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.0",
+    "phpunit/phpunit": "^9.0",
+    "vimeo/psalm": "^4.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "LaravelOpenAPI\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\LaravelOpenAPI\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelOpenAPI\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": [
+      "@php ./vendor/bin/phpunit"
+    ]
+  }
 }
