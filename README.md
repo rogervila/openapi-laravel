@@ -1,9 +1,11 @@
-<p align="center"><img height="200" src="https://cdn.worldvectorlogo.com/logos/openapi-1.svg" alt="OpenAPI" /><img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Lravel.svg.png" alt="Laravel" /></p>
+<p align="center"><img height="400" src="https://banners.beyondco.de/OpenAPI%20Laravel.png?theme=light&packageManager=composer+require&packageName=rogervila%2Fopenapi-laravel&pattern=architect&style=style_1&description=Validate+Laravel+HTTP+Requests+and+Responses+with+OpenAPI+Specs&md=1&showWatermark=0&fontSize=100px&images=shield-check" alt="OpenAPI Laravel" /></p>
 
-[![Build Status](https://github.com/rogervila/openapi-laravel/workflows/build/badge.svg)](https://github.com/rogervila/array-diff-multidimensional/actions)
+[![Build Status](https://github.com/rogervila/openapi-laravel/workflows/build/badge.svg)](https://github.com/rogervila/openapi-laravel/actions)
 [![StyleCI](https://github.styleci.io/repos/534774994/shield?branch=main)](https://github.styleci.io/repos/534774994)
+<!--
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_openapi-laravel&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_openapi-laravel)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_openapi-laravel&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_openapi-laravel)
+-->
 
 [![Latest Stable Version](https://poser.pugx.org/rogervila/openapi-laravel/v/stable)](https://packagist.org/packages/rogervila/openapi-laravel)
 [![Total Downloads](https://poser.pugx.org/rogervila/openapi-laravel/downloads)](https://packagist.org/packages/rogervila/openapi-laravel)
