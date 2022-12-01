@@ -30,13 +30,15 @@ class AbortFactory
      */
     public function forRequest(Request $request): void
     {
-        if ($this->code instanceof BaseResponse) {
-            $response = $this->code;
-        } elseif ($this->code instanceof Responsable) {
-            $response = $this->code->toResponse($request);
-        } else {
-            $response = new Response($this->message, is_int($this->code) ? $this->code : Response::HTTP_NOT_IMPLEMENTED, $this->headers);
-        }
+        $response = match (true) {
+            $this->code instanceof BaseResponse => $this->code,
+            $this->code instanceof Responsable => $this->code->toResponse($request),
+            default => new Response(
+                $this->message,
+                is_int($this->code) ? $this->code : Response::HTTP_NOT_IMPLEMENTED,
+                $this->headers
+            ),
+        };
 
         try {
             ValidatorFactory::forRequest($request)->getResponseValidator()->validate(
