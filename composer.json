@@ -22,7 +22,7 @@
   "require-dev": {
     "phpstan/phpstan": "^1.0",
     "phpunit/phpunit": "^9.0",
-    "vimeo/psalm": "^4.0"
+    "vimeo/psalm": "^5.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -50,7 +50,9 @@
   },
   "scripts": {
     "test": [
-      "@php ./vendor/bin/phpunit"
+      "@php vendor/bin/phpstan analyse src tests --level 8 --xdebug",
+      "@php vendor/bin/psalm --show-info=true",
+      "@php vendor/bin/phpunit"
     ]
   }
 }
