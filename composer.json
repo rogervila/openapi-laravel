@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "laravel/framework": "^9.21.0",
+    "laravel/framework": "^9.21.0 || ^10",
     "league/openapi-psr7-validator": "^0.18.0",
     "nyholm/psr7": "^1.5",
     "symfony/cache": "^6.0",
