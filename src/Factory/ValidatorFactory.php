@@ -39,6 +39,6 @@ class ValidatorFactory
             return $validator->fromJson($specification());
         }
 
-        throw new \InvalidArgumentException($request->getSpecification().' should be instance of '.YamlSpecification::class.' or '.JsonSpecification::class);
+        throw new \InvalidArgumentException($request->getSpecification() . ' should be instance of ' . YamlSpecification::class . ' or ' . JsonSpecification::class);
     }
 }

@@ -38,6 +38,6 @@ jobs:
         env:
           XDEBUG_MODE: coverage
 
-      - name: Test on real Laravel project
+      - name: Test on real Laravel 9 project
         run: |
-          cd laravel && composer install && php artisan test
+          cd laravel9 && composer install && php artisan test

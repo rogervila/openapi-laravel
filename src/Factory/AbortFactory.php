@@ -69,7 +69,7 @@ class AbortFactory
      */
     public static function forException(Throwable $e, int $code, array $headers = []): void
     {
-        LogFactory::make()->error('[OpenAPI] '.$e::class.': '.$e->getMessage(), ['exception' => $e]);
+        LogFactory::make()->error('[OpenAPI] ' . $e::class . ': ' . $e->getMessage(), ['exception' => $e]);
         \abort($code, $e->getMessage(), $headers);
     }
 }

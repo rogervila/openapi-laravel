@@ -38,7 +38,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/../config/openapi.php' => config_path('openapi.php'),
+            __DIR__ . '/../config/openapi.php' => config_path('openapi.php'),
         ], 'openapi-config');
     }
 }
