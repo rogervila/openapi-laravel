@@ -3,4 +3,4 @@ preset: psr12
 finder:
   exclude:
     - "vendor"
-    - "laravel9"
+    - "laravel"
