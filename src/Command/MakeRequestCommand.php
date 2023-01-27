@@ -22,7 +22,7 @@ class MakeRequestCommand extends GeneratorCommand
 
     protected function resolveStubPath(string $stub): string
     {
-        return __DIR__.'/../../stubs/'.ltrim($stub, '/');
+        return __DIR__ . '/../../stubs/' . ltrim($stub, '/');
     }
 
     /**
@@ -30,6 +30,6 @@ class MakeRequestCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace.'\Http\Requests\OpenAPI';
+        return $rootNamespace . '\Http\Requests\OpenAPI';
     }
 }

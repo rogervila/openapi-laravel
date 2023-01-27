@@ -13,16 +13,16 @@
     }
   ],
   "require": {
-    "laravel/framework": "^9.21.0",
+    "laravel/framework": "^9.21.0 || ^10",
     "league/openapi-psr7-validator": "^0.18.0",
     "nyholm/psr7": "^1.5",
     "symfony/cache": "^6.0",
     "symfony/psr-http-message-bridge": "^2.1"
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.0",
-    "phpunit/phpunit": "^9.0",
-    "vimeo/psalm": "^5.0"
+    "phpstan/phpstan": "^1.9.12",
+    "phpunit/phpunit": "^9.5.28",
+    "vimeo/psalm": "^5.4"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -51,7 +51,7 @@
   "scripts": {
     "test": [
       "@php vendor/bin/phpstan analyse src tests --level 8 --xdebug",
-      "@php vendor/bin/psalm --show-info=true",
+      "@php vendor/bin/psalm --no-cache --show-info=true",
       "@php vendor/bin/phpunit"
     ]
   }

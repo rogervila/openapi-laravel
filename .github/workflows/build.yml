@@ -13,8 +13,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
         php: ['8.2', '8.1', '8.0']
+        laravel: ['9']
 
-    name: PHP ${{ matrix.php }} - ${{ matrix.os }}
+    name: PHP ${{ matrix.php }} - ${{ matrix.os }} - ${{ matrix.laravel }}
 
     steps:
       - name: Checkout code
@@ -40,4 +41,4 @@ jobs:
 
       - name: Test on real Laravel project
         run: |
-          cd laravel && composer install && php artisan test
+          cd laravel/${{ matrix.laravel }} && composer install && php artisan test

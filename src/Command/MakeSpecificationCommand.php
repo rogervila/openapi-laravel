@@ -22,7 +22,7 @@ class MakeSpecificationCommand extends GeneratorCommand
 
     protected function resolveStubPath(string $stub): string
     {
-        return __DIR__.'/../../stubs/'.ltrim($stub, '/');
+        return __DIR__ . '/../../stubs/' . ltrim($stub, '/');
     }
 
     /**
