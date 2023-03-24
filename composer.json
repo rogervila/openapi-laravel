@@ -14,7 +14,7 @@
   ],
   "require": {
     "laravel/framework": "^9.21.0",
-    "league/openapi-psr7-validator": "^0.18.0",
+    "league/openapi-psr7-validator": "^0.18.0 || ^0.20",
     "nyholm/psr7": "^1.5",
     "symfony/cache": "^6.0",
     "symfony/psr-http-message-bridge": "^2.1"
